@@ -1,5 +1,5 @@
-doy=input('Äê»ıÈÕ£º');
-year=input('Äê·İ£º');
+doy=input('å¹´ç§¯æ—¥ï¼š');
+year=input('å¹´ä»½ï¼š');
 
 monthd(1:12)=[31,28,31,30,31,30,31,31,30,31,30,31];
 if ((mod(year,4)==0 & mod(year,100)~=0) | mod(year,400)==0)
@@ -14,10 +14,10 @@ for i=1:12
     break
   end
 end
-fprintf('%dÔÂ%dÈÕ\n',month,day);
+fprintf('%dæœˆ%dæ—¥\n',month,day);
 
-month=input('ÔÂ·İ£º');
-day=input('ÈÕÆÚ£º');
+month=input('æœˆä»½ï¼š');
+day=input('æ—¥æœŸï¼š');
 doy=0;
 if month==1
     doy=doy+day
@@ -27,4 +27,4 @@ for i=2:month
 end
 doy=doy+day+1;
 end
-fprintf('Äê»ıÈÕ:%d\n',doy);
+fprintf('å¹´ç§¯æ—¥:%d\n',doy);
